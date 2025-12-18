@@ -1,0 +1,31 @@
+A-atomicity
+C-consistent
+I-isolation
+D-durability
+
+Atomicity:
+=> all or none 
+=> Either the transaction occurs completely or it does not occur at all.
+operations either get abort or commit
+
+Consistent:
+=> database remains consistent before and after the transaction
+
+Isolation:
+=> means separation
+=> Isolation ensures that multiple transactions occur 
+independently and the intermediate results of a 
+transaction are not visible to other transactions 
+until it is committed.
+=> multiple transactions occur independently
+=> prevent dirty read (reading of uncommited data)
+
+Durability:
+=> permanent of something
+=> means after commit data written on the disk
+
+
+
+
+
+
