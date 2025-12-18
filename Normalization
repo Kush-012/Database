@@ -11,6 +11,44 @@ Normal Forms:
 Each table contain atomic value
 Each record should be unique
 
+
 2NF=>
 Each table 1NF
-Each 
+table should not have partial dependency
+
+score_id | student_id | subject_id | marks | teacher
+1          10             1          70      Java
+2          10             2          75      Cpp
+3          11             1          80      Java
+
+Primary Key: student_id+subject_id 
+Candidate Key: score_id, student_id+subject_id 
+Super Keys: All attribute sets that contain either score_id or (student_id, subject_id)
+
+teacher depends only on subject_id          partial dependency
+marks depend on student_id and subject_id   full dependency
+
+it has partial dependency bcz teacher depends only on subject_id not on both 
+
+
+3NF=>
+be in 2 NF
+table not have transitive dependency(A->B B->C then A!>C) on candidate key
+
+| St_Id | Name  | Sub_Id | Sub  | Address |
+| ----: | ----- | -----: | ---- | ------- |
+|     1 | John  |     11 | SQL  | Delhi   |
+|     2 | Harry |     12 | C++  | Pune    |
+|     3 | Sam   |     13 | JAVA | Delhi   |
+|     4 | Rita  |     12 | C++  | Mumbai  |
+
+St_Id → Sub_Id
+Sub_Id → Sub
+St_Id → Sub   (indirectly)
+
+Transitive dependency
+It should not be there
+
+
+
+
