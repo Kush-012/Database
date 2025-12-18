@@ -6,3 +6,11 @@ Normal Forms:
   2NF
   3NF
   BCNF
+
+1NF=>
+Each table contain atomic value
+Each record should be unique
+
+2NF=>
+Each table 1NF
+Each 
