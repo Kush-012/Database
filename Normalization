@@ -55,5 +55,31 @@ It should not be there
 BCNF=>
 Prime to non-prime (not possible)
 
+| Normal Form | Rule                           
+| 3NF     | LHS is key OR RHS is prime 
+| BCNF    | LHS must be key 
+
+key means candidate key
+
+| Student | Course | Teacher |
+| ------- | ------ | ------- |
+| A       | DBMS   | Mr. X   |
+| B       | DBMS   | Mr. X   |
+| C       | OS     | Mr. Y   |
+| D       | OS     | Mr. Y   |
+
+Attributes: Student, Course, Teacher
+Candidate Key: (Student, Course)
+Primary Key: (Student, Course)
+Prime Attributes: Student, Course
+Non-Prime Attribute: Teacher
+
+
+(Student, Course) → Teacher (LHS is key)
+Course → Teacher (LHS is not key)
+
+Table is not in BCNF
+
+
 
 
