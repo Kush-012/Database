@@ -1,1 +1,5 @@
+Introduction:
+1) PostgreSQL uses SQL to storing its data in foam of tables.
+2) Has fixed schema
 
+pg is the library used for nodeJS+postgreSQL
